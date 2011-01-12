@@ -1,0 +1,15 @@
+{
+	"name": "Google Apps Script Resources",
+	"version": "1.0",
+	"description": "Here you can find links to all necessary Google Apps Script resources.",
+	"background_page": "background.html",
+	"browser_action": {
+		"icons": {
+			"16": "icon16.png",
+			"48": "icon48.png",
+			"128": "icon128.png"
+		},
+		"default_icon": "icon128.png",
+		"popup": "popup.html"
+	}
+}
