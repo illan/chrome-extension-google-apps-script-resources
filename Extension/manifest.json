@@ -1,7 +1,8 @@
 {
-	"name": "Google Apps Script Resources",
+	"name": "__MSG_extension_name__",
+	"default_locale": "en",
 	"version": "1.0",
-	"description": "Here you can find links to all necessary Google Apps Script resources.",
+	"description": "__MSG_extension_description__",
 	"background_page": "background.html",
 	"browser_action": {
 		"icons": {
