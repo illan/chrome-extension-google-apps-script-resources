@@ -1,59 +1,81 @@
-<style>
-	body {
-		min-width: 300px;
-		overflow-x: hidden;
-		font-size: 12px;
-		font-family: Helvetica, Arial, sans-serif;
-	}
+<html>
+	<head>
+		<style>
+			body {
+				min-width: 300px;
+				overflow-x: hidden;
+				font-size: 12px;
+				font-family: Helvetica, Arial, sans-serif;
+			}
 	
-	h1 {
-		font-size: 16px;
-		border-bottom: 1px solid #22407B;
-		color: #22407B;
-		padding-bottom: 5px;
-	}
+			h1 {
+				font-size: 16px;
+				border-bottom: 1px solid #22407B;
+				color: #22407B;
+				padding-bottom: 5px;
+			}
 
-	h2 {
-		font-size: 14px;
-		color: #22407B;
-	}
+			h2 {
+				font-size: 14px;
+				color: #22407B;
+			}
 
-	ul {
-		padding-left: 0;
-	}
+			ul {
+				padding-left: 0;
+			}
 	
-	li {
-		list-style: none;
-		line-height: 150%;
-	}
+			li {
+				list-style: none;
+				line-height: 150%;
+			}
 	
-	a {
-		text-decoration: none;
-		color: #000000;
-	}
+			a {
+				text-decoration: none;
+				color: #000000;
+			}
 
-	a:hover {
-		text-decoration: underline;
-	}
-</style>
+			a:hover {
+				text-decoration: underline;
+			}
+		</style>
 
-<script>
-	openTab = function(url) {
-		chrome.tabs.create({"url": url});
-	}
-</script>
+		<script>
+			init = function() {
+				document.getElementById("headline").innerText = chrome.i18n.getMessage("headline");
 
-<h1>Google Apps Script Resources</h1>
+				document.getElementById("section_1").innerText = chrome.i18n.getMessage("section_1");
+				document.getElementById("section_2").innerText = chrome.i18n.getMessage("section_2");
+				
+				document.getElementById("link_1").innerText = chrome.i18n.getMessage("link_1_text");
+				document.getElementById("link_2").innerText = chrome.i18n.getMessage("link_2_text");
+				document.getElementById("link_3").innerText = chrome.i18n.getMessage("link_3_text");
+				document.getElementById("link_4").innerText = chrome.i18n.getMessage("link_4_text");
+				document.getElementById("link_5").innerText = chrome.i18n.getMessage("link_5_text");
 
-<h2>From Google</h2>
-<ul>
-	<li><a href="javascript:openTab('http://code.google.com/intl/en/googleapps/appsscript/')">Google Apps Script at Google Code</a></li>
-	<li><a href="javascript:openTab('http://code.google.com/intl/en/googleapps/appsscript/guide.html')">Google Apps Script documentation</a></li>
-	<li><a href="javascript:openTab('http://www.google.com/support/forum/p/apps-script?hl=en')">Google Apps Script help forum</a></li>
-	<li><a href="javascript:openTab('http://googleappsscript.blogspot.com/')">Google Apps Script blog</a></li>
-</ul>
+				document.getElementById("link_1").href = "javascript:openTab('"+chrome.i18n.getMessage("link_1_url")+"')";
+				document.getElementById("link_2").href = "javascript:openTab('"+chrome.i18n.getMessage("link_2_url")+"')";
+				document.getElementById("link_3").href = "javascript:openTab('"+chrome.i18n.getMessage("link_3_url")+"')";
+				document.getElementById("link_4").href = "javascript:openTab('"+chrome.i18n.getMessage("link_4_url")+"')";
+				document.getElementById("link_5").href = "javascript:openTab('"+chrome.i18n.getMessage("link_5_url")+"')";
+			}
 
-<h2>Not from Google</h2>
-<ul>
-	<li><a href="javascript:openTab('http://google-apps-script.blogspot.com/')">Google Apps Script Blog (german)</a></li>
-</ul>
+			openTab = function(url) {
+				chrome.tabs.create({"url": url});
+			}
+		</script>
+	</head>
+	<body onload ="init()">
+		<h1 id="headline"></h1>
+		<h2 id="section_1"></h2>
+		<ul>
+			<li><a id="link_1" href=""></a></li>
+			<li><a id="link_2" href=""></a></li>
+			<li><a id="link_3" href=""></a></li>
+			<li><a id="link_4" href=""></a></li>
+		</ul>
+		<h2 id="section_2"></h2>
+		<ul>
+			<li><a id="link_5" href=""></a></li>
+		</ul>
+	</body>
+</html>

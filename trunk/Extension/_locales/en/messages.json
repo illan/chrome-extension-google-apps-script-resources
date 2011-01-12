@@ -1,0 +1,62 @@
+{
+	"extension_name": {
+		"message": "Google Apps Script Resources",
+		"description": "The name of the extension"
+	},
+	"extension_description": {
+		"message": "Here you can find links to all necessary Google Apps Script resources.",
+		"description": "The description of the extension"
+	},
+	"headline": {
+		"message": "Google Apps Script Resources",
+		"description": "The first headline of the extension"
+	},
+	"section_1": {
+		"message": "From Google",
+		"description": "The headline of the 1. section"
+	},
+	"section_2": {
+		"message": "Not from Google",
+		"description": "The headline of the 2. section"
+	},
+	"link_1_text": {
+		"message": "Google Apps Script at Google Code",
+		"description": "Text of link 1"
+	},
+	"link_2_text": {
+		"message": "Google Apps Script documentation",
+		"description": "Text of link 2"
+	},
+	"link_3_text": {
+		"message": "Google Apps Script help forum",
+		"description": "Text of link 3"
+	},
+	"link_4_text": {
+		"message": "Google Apps Script blog",
+		"description": "Text of link 4"
+	},
+	"link_5_text": {
+		"message": "Google Apps Script Blog (german)",
+		"description": "Text of link 5"
+	},
+	"link_1_url": {
+		"message": "http://code.google.com/intl/en/googleapps/appsscript/",
+		"description": "Url of link 1"
+	},
+	"link_2_url": {
+		"message": "http://code.google.com/intl/en/googleapps/appsscript/guide.html",
+		"description": "Url of link 2"
+	},
+	"link_3_url": {
+		"message": "http://www.google.com/support/forum/p/apps-script?hl=en",
+		"description": "Url of link 3"
+	},
+	"link_4_url": {
+		"message": "http://googleappsscript.blogspot.com/",
+		"description": "Url of link 4"
+	},
+	"link_5_url": {
+		"message": "http://google-apps-script.blogspot.com/",
+		"description": "Url of link 5"
+	}
+}
