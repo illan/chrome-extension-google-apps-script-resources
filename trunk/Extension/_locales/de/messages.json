@@ -7,6 +7,10 @@
 		"message": "Hier finden Sie alle wichtigen Links zu Google Apps Script Ressourcen.",
 		"description": "The description of the extension"
 	},
+	"extension_default_title": {
+		"message": "Google Apps Script Ressourcen",
+		"description": "The default title of the extension"
+	},
 	"headline": {
 		"message": "Google Apps Script Ressourcen",
 		"description": "The first headline of the extension"
