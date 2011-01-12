@@ -5,11 +5,11 @@ If you have a feature request or found a bug, please [http://code.google.com/p/c
 
 = Versions =
 
-== Version 1.1 ==
+== Version 1.1 (2011-01-11) ==
 
-  * [http://code.google.com/p/chrome-extension-google-apps-script-resources/issues/detail?id=1 Internationalization (i18n) added]
-  * [http://code.google.com/p/chrome-extension-google-apps-script-resources/issues/detail?id=2 German translation added]
+  * Internationalization (i18n) added (issue #1)
+  * German translation added (issue #2)
 
-== Version 1.0 ==
+== Version 1.0 (2011-01-10) ==
 
   * Initial version.
