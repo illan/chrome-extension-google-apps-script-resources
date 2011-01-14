@@ -62,5 +62,21 @@
 	"link_5_url": {
 		"message": "http://google-apps-script.blogspot.com/",
 		"description": "Url of link 5"
+	},
+	"options": {
+		"message": "Options",
+		"description": "Headline 2 of the options page"
+	},
+	"new_tab": {
+		"message": "new tab",
+		"description": "new tab"
+	},
+	"active_tab": {
+		"message": "active tab",
+		"description": "active tab"
+	},
+	"new_window": {
+		"message": "new window",
+		"description": "new window"
 	}
 }

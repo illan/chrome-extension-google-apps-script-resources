@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+	<head>
+		<link rel="stylesheet" href="/css/main.css"/>
+		<script>
+			init = function() {
+				document.getElementById('headline').innerText = chrome.i18n.getMessage('headline');
+				document.getElementById('options').innerText = chrome.i18n.getMessage('options');
+				
+				var link_target = window.localStorage.getItem('link_target');
+				if (link_target == undefined) {
+					link_target = 'new_tab';				
+				}
+
+				var link_target_options = [
+					{'id': 'new_tab', 'text': chrome.i18n.getMessage('new_tab')},
+					{'id': 'active_tab', 'text': chrome.i18n.getMessage('active_tab')},
+					{'id': 'new_window', 'text': chrome.i18n.getMessage('new_window')}
+				];
+
+				for (var i = 0; i < link_target_options.length; i++) {
+					document.getElementById('link_target').innerHTML += '<option id="'+link_target_options[i].id+'"'+(link_target == link_target_options[i].id ? ' selected="selected"' : '')+'>'+link_target_options[i].text+'</option>';
+				}
+				
+				delete init;
+			}
+		</script>
+	</head>
+	<body onload ="init()">
+		<h1 id="headline"></h1>
+		<h2 id="options"></h2>
+		<p>
+			Open links in <select id="link_target" onchange="window.localStorage.setItem('link_target', this.options[this.selectedIndex].id);"></select>
+		</p>
+	</body>
+</html>
