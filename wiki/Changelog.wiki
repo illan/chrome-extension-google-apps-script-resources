@@ -5,6 +5,13 @@ If you have a feature request or found a bug, please [http://code.google.com/p/c
 
 = Versions =
 
+== Version 1.2 (2011-01-15) ==
+
+  * Tooltip to icon bar icon added (issue #3)
+  * Icon for the extensions page in chrome defined (issue #4)
+  * Possibility to define how to open links added (issue #5)
+  * Popup will now be closed after link click (issue #6)
+
 == Version 1.1 (2011-01-11) ==
 
   * Internationalization (i18n) added (issue #1)
