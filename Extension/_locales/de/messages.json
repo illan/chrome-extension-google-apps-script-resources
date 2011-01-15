@@ -67,6 +67,10 @@
 		"message": "Optionen",
 		"description": "Headline 2 of the options page"
 	},
+	"open_links_in": {
+		"message": "Links öffnen in",
+		"description": "Open links in"
+	},
 	"new_tab": {
 		"message": "neuer Tab",
 		"description": "new tab"

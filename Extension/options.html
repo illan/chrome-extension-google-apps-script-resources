@@ -5,6 +5,7 @@
 			init = function() {
 				document.getElementById('headline').innerText = chrome.i18n.getMessage('headline');
 				document.getElementById('options').innerText = chrome.i18n.getMessage('options');
+				document.getElementById('open_links_in').innerText = chrome.i18n.getMessage('open_links_in');
 				
 				var link_target = window.localStorage.getItem('link_target');
 				if (link_target == undefined) {
@@ -29,7 +30,7 @@
 		<h1 id="headline"></h1>
 		<h2 id="options"></h2>
 		<p>
-			Open links in <select id="link_target" onchange="window.localStorage.setItem('link_target', this.options[this.selectedIndex].id);"></select>
+			<span id="open_links_in"></span> <select id="link_target" onchange="window.localStorage.setItem('link_target', this.options[this.selectedIndex].id);"></select>
 		</p>
 	</body>
 </html>
