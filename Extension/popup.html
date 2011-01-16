@@ -3,14 +3,14 @@
 		<link rel="stylesheet" href="/css/main.css"/>
 		<script>
 			init = function() {
-				document.getElementById("headline").innerText = chrome.i18n.getMessage("headline");
+				document.getElementById('headline').innerText = chrome.i18n.getMessage('headline');
 
-				document.getElementById("section_1").innerText = chrome.i18n.getMessage("section_1");
-				document.getElementById("section_2").innerText = chrome.i18n.getMessage("section_2");
+				document.getElementById('section_1').innerText = chrome.i18n.getMessage('section_1');
+				document.getElementById('section_2').innerText = chrome.i18n.getMessage('section_2');
 				
 				for (var i = 1; i <= 5; i++) {
-					document.getElementById("link_"+String(i)).innerText = chrome.i18n.getMessage("link_"+String(i)+"_text");
-					document.getElementById("link_"+String(i)).href = "javascript:openLink('"+chrome.i18n.getMessage("link_"+String(i)+"_url")+"')";
+					document.getElementById('link_'+String(i)).innerText = chrome.i18n.getMessage('link_'+String(i)+'_text');
+					document.getElementById('link_'+String(i)).href = "javascript:openLink('"+chrome.i18n.getMessage("link_"+String(i)+"_url")+"')";
 				}
 
 				delete init;
@@ -20,7 +20,7 @@
 				switch (window.localStorage.getItem('link_target')) {
 					case undefined:
 					case 'new_tab':
-						chrome.tabs.create({"url": url});
+						chrome.tabs.create({'url': url});
 						break;
 					case 'active_tab':
 						chrome.windows.getCurrent(function(w) {
