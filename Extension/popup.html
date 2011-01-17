@@ -18,6 +18,7 @@
 
 			openLink = function(url) {
 				switch (window.localStorage.getItem('link_target')) {
+					case null:
 					case undefined:
 					case 'new_tab':
 						chrome.tabs.create({'url': url});
