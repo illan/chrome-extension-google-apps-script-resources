@@ -8,7 +8,7 @@
 				document.getElementById('open_links_in').innerText = chrome.i18n.getMessage('open_links_in');
 				
 				var link_target = window.localStorage.getItem('link_target');
-				if (link_target == undefined) {
+				if (link_target == undefined || link_target == null) {
 					link_target = 'new_tab';				
 				}
 
